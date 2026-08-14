@@ -70,3 +70,48 @@ para:
 db.url=jdbc:mysql://localhost:3306/employee_management
 db.username=root
 db.password=YOUR_PASSWORD
+```
+
+## Exemplo Output (Valores Fictícios utilizando Datafaker)
+
+```
+> Task :br.com.gui.Main.main()
+Criado:
+Employee{id=7, name='Giovanna Banheira', salary=6612.34, commission=1923.81, bonus=582.8, birthday=1990-02-10}
+
+Encontrado:
+Employee{id=7, name='Giovanna Banheira', salary=6612.34, commission=1923.81, bonus=582.80, birthday=1990-02-10}
+
+Segundo funcion�rio criado:
+Employee{id=8, name='C�sar Fontes', salary=9885.56, commission=427.46, bonus=1130.27, birthday=1998-10-22}
+
+Encontrados(FIND ALL):
+[Employee{id=8, name='C�sar Fontes', salary=9885.56, commission=427.46, bonus=1130.27, birthday=1998-10-22}, Employee{id=7, name='Giovanna Banheira', salary=6612.34, commission=1923.81, bonus=582.80, birthday=1990-02-10}]
+
+Remunera��o funcion�rio 1:
+Sal�rio: 6612.34
+Sal�rio + comiss�o: 8536.15
+Remunera��o total: 9118.95
+
+Remunera��o funcion�rio 2:
+Sal�rio: 9885.56
+Sal�rio + comiss�o: 10313.02
+Remunera��o total: 11443.29
+
+Atualizado(SALARIO = 6000):
+Employee{id=7, name='Giovanna Banheira', salary=6000.00, commission=1923.81, bonus=582.80, birthday=1990-02-10}
+
+Depois do delete:
+Optional.empty
+
+Encontrados(FIND ALL):
+[Employee{id=8, name='C�sar Fontes', salary=9885.56, commission=427.46, bonus=1130.27, birthday=1998-10-22}]
+
+Depois do delete:
+Optional.empty
+
+Encontrados(FIND ALL)
+[]
+
+BUILD SUCCESSFUL in 1s
+```
